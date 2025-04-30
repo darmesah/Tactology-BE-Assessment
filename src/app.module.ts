@@ -30,6 +30,7 @@ import { SubDepartmentModule } from './sub-department/sub-department.module';
         username: configService.get<string>('DB_USERNAME'),
         password: configService.get<string>('DB_PASSWORD'),
         database: configService.get<string>('DB_NAME'),
+        ssl: true,
         entities: ['dist/**/*.entity{.ts,.js}'],
         synchronize: true,
       }),
