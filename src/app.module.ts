@@ -7,6 +7,7 @@ import { AuthModule } from './auth/auth.module';
 import { DepartmentModule } from './department/department.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { SubDepartmentModule } from './sub-department/sub-department.module';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -39,7 +40,7 @@ import { SubDepartmentModule } from './sub-department/sub-department.module';
     DepartmentModule,
     SubDepartmentModule,
   ],
-  controllers: [],
+  controllers: [AppController],
   providers: [],
 })
 export class AppModule {}
